@@ -1,6 +1,6 @@
 import Title from './components/Title/Title';
 import Notes from './components/Notes/Notes';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 	const [notes, setNotes] = useState(['']);
 
-	useState(() => {
+	useEffect(() => {
 		const storedNotes = JSON.parse(localStorage.getItem('notes'));
 		if (!storedNotes) {
 			localStorage.setItem('notes', JSON.stringify(notes));
