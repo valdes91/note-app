@@ -1,0 +1,24 @@
+.note-card {
+	height: 450px;
+	width: 65%;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	margin-bottom: 3rem;
+}
+
+.note-card .note-body {
+	height: 100%;
+	padding: 5px;
+	overflow-y: scroll;
+}
+
+#card-head {
+	align-items: center;
+}
+
+#card-head .delete {
+	color: red;
+}
+
+#card-head .delete:hover {
+	cursor: pointer;
+}
